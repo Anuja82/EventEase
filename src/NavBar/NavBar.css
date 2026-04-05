@@ -1,0 +1,130 @@
+.navbar{
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-logo{
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.highlight{
+  color: #ff007f;
+}
+.navbar-links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar-links li a:hover{
+  color: #ff007f;
+}
+.navbar-search input{
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 6px 10px;
+  width: 160px;
+  transition: all 0.3s ease;
+}
+.bar{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+.nav-auth a{
+  font-size: 22px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease,transform 0.2s ease;
+}
+.nav-auth a:hover{
+  color: #ff2d75;
+  transform: scale(1.1);
+}
+.navbar-search input:focus{
+  outline: none;
+  border-color: #ff007f;
+}
+
+/* Search form layout */
+.search-form{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+/* Search input */
+
+.search-form input{
+  background:#1a1a1a;
+  color:#fff;
+  border:1px solid #333;
+  border-radius:4px;
+  padding:6px 10px;
+  width:160px;
+}
+
+/* Search button */
+
+.search-btn{
+  background:#ff007f;
+  color:#fff;
+  border:none;
+  padding:6px 12px;
+  border-radius:4px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.search-btn:hover{
+  background:#ff2d75;
+}
+/*Responsive*/
+@media(max-width:768px){
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+  .navbar-links{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+  }
+  .navbar-links.active{
+    display: flex;
+  }
+  .navbar-search{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .navbar-search input{
+    width: 100%;
+  }
+  .search-form{
+    display: flex;
+  } 
+  
+
+
+  
+}

@@ -1,0 +1,137 @@
+/* page background */
+
+.client-requests-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(
+    to bottom,
+    #04000d,
+    #090018,
+    #14002e
+  );
+}
+
+
+/* full width card */
+
+.client-requests-card {
+  width: 100%;
+  background: rgba(20, 0, 40, 0.9);
+  border-radius: 25px;
+  padding: 30px 40px;
+  backdrop-filter: blur(10px);
+}
+
+
+/* title */
+
+.client-requests-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+
+/* table */
+
+.client-requests-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+/* table headers */
+
+.client-requests-card th {
+  padding: 18px 15px;
+  text-align: left;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+
+/* table rows */
+
+.client-requests-card td {
+  padding: 18px 15px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: #eee;
+  font-size: 15px;
+}
+
+
+/* hover */
+
+.client-requests-card tbody tr:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+
+/* status badge */
+
+.status {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* status colors */
+
+.status.NEW {
+  background: rgba(0, 140, 255, 0.15);
+  color: #00bfff;
+}
+
+.status.CONTACTED {
+  background: rgba(255, 170, 0, 0.15);
+  color: #ffaa00;
+}
+
+.status.APPROVED {
+  background: rgba(0, 255, 150, 0.15);
+  color: #00ffb3;
+}
+
+
+/* buttons */
+
+.contact-btn,
+.approve-btn {
+  padding: 6px 16px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+/* contact button */
+
+.contact-btn {
+  border: 1px solid #00bfff;
+  color: #00bfff;
+}
+
+.contact-btn:hover {
+  background: #00bfff;
+  color: white;
+}
+
+
+/* approve button */
+
+.approve-btn {
+  border: 1px solid #ff2a7f;
+  color: #ff2a7f;
+}
+
+.approve-btn:hover {
+  background: #ff2a7f;
+  color: white;
+}

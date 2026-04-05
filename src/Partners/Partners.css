@@ -1,0 +1,78 @@
+.why-choose{
+    min-height:60vh;
+    padding: 80px 20px;
+    text-align: center;
+    background:radial-gradient(circle at top left,#1a001a,#000);
+    color: #fff;
+
+}
+.why-choose h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #ff077f;
+}
+
+
+.subtitle{
+    color: #bcbcbc;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+.features{
+    display: flex;
+   justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+   
+}
+
+.card{
+    width: 300px;
+    padding: 35px 25px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(255,0,150,0.15);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+   
+  
+   
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 60px rgba(255, 0, 150, 0.3);
+}
+.icon{
+   font-size: 45px;
+   margin-bottom: 20px;
+}
+
+.ticket{
+    color: #ff5fd2;
+}
+.security{
+    color: #4db8ff;
+}  
+.discovery{
+    color: #ff5fd2;
+   
+}
+.card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 14px;
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+@keyframes scrollLogos{
+    from { transform: translateX(0);}
+    to { transform: translateX(-50%);}
+}

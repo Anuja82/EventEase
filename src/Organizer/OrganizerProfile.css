@@ -1,0 +1,110 @@
+/* Page Background */
+.profile-container {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Card */
+.profile-card {
+  background-color: #111;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.15);
+  color: #fff;
+}
+
+/* Heading */
+.profile-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff007f;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Labels */
+.profile-card label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Inputs */
+.profile-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.profile-input:focus {
+  border-color: #ff007f;
+  box-shadow: 0 0 8px rgba(255, 0, 127, 0.4);
+}
+
+/* Disabled Input */
+.disabled-input {
+  background-color: #222;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Button Group */
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Main Theme Button */
+.theme-btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff007f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: #e60073;
+  transform: translateY(-2px);
+}
+
+/* Outline Version */
+.outline-btn {
+  background-color: transparent;
+  border: 1px solid #ff007f;
+  color: #ff007f;
+}
+
+.outline-btn:hover {
+  background-color: #ff007f;
+  color: #fff;
+}
+
+/* Message Text */
+.message-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ff007f;
+}

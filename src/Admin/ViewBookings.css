@@ -1,0 +1,162 @@
+/* ===== ADMIN BOOKINGS PAGE ===== */
+
+.admin-bookings {
+
+  background: #0b0014;
+
+  min-height: 100vh;
+
+  padding: 30px;
+
+  color: #fff;
+
+}
+
+
+/* CONTAINER */
+
+.admin-bookings-container {
+
+  width: 85%;
+
+  margin: auto;
+
+  margin-top: 40px;
+
+  background: rgba(255,255,255,0.03);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.1);
+
+}
+
+
+/* HEADER */
+
+.top-bar h2 {
+
+  color: #fff;
+
+  font-size: 22px;
+
+}
+
+
+/* TABLE */
+
+.admin-bookings-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin-top: 20px;
+
+}
+
+
+/* TABLE HEADER */
+
+.admin-bookings-table th {
+
+  padding: 12px;
+
+  text-align: left;
+
+  color: #aaa;
+
+  font-weight: 500;
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+
+}
+
+
+/* TABLE ROWS */
+
+.admin-bookings-table td {
+
+  padding: 12px;
+
+  color: #eee;
+
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+
+}
+
+
+/* ROW HOVER EFFECT */
+
+.admin-bookings-table tr:hover {
+
+  background: rgba(255,255,255,0.05);
+
+}
+
+
+/* STATUS BADGE */
+
+.admin-status {
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+}
+
+
+/* BOOKED STATUS */
+
+.admin-status.success {
+
+  background: rgba(0,255,174,0.15);
+
+  color: #00ffae;
+
+}
+
+
+/* CANCEL STATUS */
+
+.admin-status.cancel {
+
+  background: rgba(255,77,109,0.15);
+
+  color: #ff4d6d;
+
+}
+
+
+/* EMPTY STATE */
+
+.no-data {
+
+  text-align: center;
+
+  color: #888;
+
+  padding: 20px;
+
+}
+
+
+/* LOADING TEXT */
+
+.loading {
+
+  text-align: center;
+
+  color: #aaa;
+
+  padding: 20px;
+
+}

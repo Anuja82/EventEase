@@ -1,0 +1,76 @@
+.booking-success-card{
+  width:100%;
+  max-width:650px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius:20px;
+  padding:50px;
+  border:1px solid rgba(255,0,127,0.3);
+  box-shadow:0 0 40px rgba(255,0,127,0.15);
+  color:white; 
+  text-align:center; 
+} 
+.success-icon{ 
+  font-size:60px;
+  margin-bottom:20px;
+} 
+.booking-success-card h2{ 
+  color:#ff2d8d;
+  margin-bottom:10px; 
+} 
+.success-details{
+  margin-top:30px; 
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px; 
+  text-align:left; 
+} 
+.success-details span{ 
+  font-size:13px; 
+  color:#aaa; 
+}
+.success-details p{
+  margin-top:5px; 
+  font-weight:500; 
+}
+.success-buttons{
+  margin-top:30px;
+  display:flex;
+  gap:15px;
+  justify-content:center;
+}
+
+.success-buttons button{
+  flex:1;                 
+  max-width:220px;       
+  padding:14px 20px;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* View Ticket button */
+.ticket-btn{
+  border:1px solid #ff2d8d;
+  background:transparent;
+  color:#ff2d8d;
+}
+
+.ticket-btn:hover{
+  background:#ff2d8d;
+  color:white;
+}
+
+/* Explore button */
+.confirm-theme-btn{
+  border:none;
+  background:linear-gradient(45deg,#ff007f,#ff4da6);
+  color:white;
+}
+
+.confirm-theme-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(255,0,127,0.4);
+}

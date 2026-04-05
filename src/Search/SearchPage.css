@@ -1,0 +1,165 @@
+/* PAGE BACKGROUND */
+
+.search-page{
+  min-height:100vh;
+  background:radial-gradient(circle at top left,#1a001a,#000);
+  padding-bottom:80px;
+  color:#fff;
+}
+
+
+
+/* CONTAINER */
+
+.search-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding-top:50px;
+}
+
+
+
+/* GRID */
+
+.search-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+
+
+/* EVENT CARD */
+
+.search-card{
+  background:#111;
+  border-radius:16px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.35s;
+  box-shadow:0 8px 25px rgba(0,0,0,0.6);
+}
+
+
+
+/* HOVER */
+
+.search-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 45px rgba(255,46,146,0.3);
+}
+
+
+
+/* IMAGE */
+
+.search-image{
+  position:relative;
+  height:170px;
+  overflow:hidden;
+}
+
+.search-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+.search-card:hover img{
+  transform:scale(1.08);
+}
+
+
+
+/* DATE BADGE */
+
+.date-badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:linear-gradient(45deg,#ff2f92,#ff6ec4);
+  padding:5px 10px;
+  border-radius:6px;
+  font-size:12px;
+}
+
+
+
+/* INFO */
+
+.search-info{
+  padding:18px;
+}
+
+.search-info h3{
+  font-size:18px;
+  margin-bottom:6px;
+  color:#ff007f;
+}
+
+
+
+/* VENUE */
+
+.venue{
+  font-size:13px;
+  color:#aaa;
+}
+
+
+
+/* FOOTER */
+
+.search-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:12px;
+}
+
+
+
+/* PRICE */
+
+.price{
+  font-weight:bold;
+  color:#ff2f92;
+}
+
+
+
+/* BUTTON */
+
+.vw-btn{
+  border:none;
+  background:linear-gradient(45deg,#ff007f,#ff4da6);;
+  color:#fff;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+
+
+/* NO RESULTS */
+
+.no-results{
+  text-align:center;
+  margin-top:40px;
+  color:#bbb;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.search-grid{
+  grid-template-columns:1fr;
+}
+
+}
