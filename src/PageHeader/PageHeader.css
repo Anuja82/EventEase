@@ -1,0 +1,43 @@
+.page-header{
+   
+    height: 50-60vh;
+    min-height: 420px;
+   
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/images/bn.png');
+}
+
+.page-header.overlay{
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+.page-header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+
+.page-header p {
+
+  font-size: 17px;
+
+  color: rgba(255,255,255,0.85);
+
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  line-height: 1.7;
+
+}

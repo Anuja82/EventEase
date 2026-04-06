@@ -1,0 +1,195 @@
+.admin-login-page{
+
+  min-height:100vh;
+
+  background:linear-gradient(
+    to bottom,
+    #04000d,
+    #090018,
+    #14002e
+  );
+
+}
+
+
+/* center container */
+
+.admin-login-container{
+
+  height:80vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+
+/* glass card */
+
+.admin-login-card{
+
+  width:380px;
+
+  padding:45px 35px;
+
+  border-radius:20px;
+
+  backdrop-filter:blur(18px);
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  box-shadow:0px 10px 40px rgba(255,0,127,0.15);
+
+  text-align:center;
+
+}
+
+
+/* heading */
+
+.admin-login-card h2{
+
+  color:#ff007f;
+
+  font-size:28px;
+
+  margin-bottom:10px;
+
+}
+
+
+/* subtitle */
+
+.subtitle{
+
+  color:#cfc7cf;
+
+  margin-bottom:25px;
+
+}
+
+
+/* inputs */
+
+.admin-login-card input{
+
+  width:100%;
+
+  padding:14px;
+
+  margin-bottom:18px;
+
+  border-radius:10px;
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  background:rgba(255,255,255,0.06);
+
+  color:white;
+
+  outline:none;
+
+  font-size:15px;
+
+}
+
+
+/* placeholder */
+
+.admin-login-card input::placeholder{
+
+  color:#bfb8bf;
+
+}
+
+
+/* button */
+
+.admin-login-card button{
+
+  width:100%;
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:linear-gradient(
+    90deg,
+    #ff007f,
+    #ff3b9b
+  );
+
+  color:white;
+
+  font-weight:600;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+}
+
+
+.admin-login-card button:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:0px 6px 25px rgba(255,0,127,0.4);
+
+}
+/* demo admin credentials box */
+
+.demo-admin-box{
+
+margin-top:25px;
+
+padding:15px;
+
+border-radius:12px;
+
+background:rgba(255,255,255,0.04);
+
+border:1px solid rgba(255,255,255,0.08);
+
+backdrop-filter:blur(10px);
+
+}
+
+
+/* demo title */
+
+.demo-title{
+
+color:#ff007f;
+
+font-weight:600;
+
+margin-bottom:6px;
+
+font-size:14px;
+
+}
+
+
+/* demo credentials text */
+
+.demo-credentials{
+
+color:#d0cbd1;
+
+font-size:13px;
+
+margin:2px 0;
+
+letter-spacing:0.4px;
+
+}

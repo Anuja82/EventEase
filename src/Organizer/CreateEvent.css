@@ -1,0 +1,85 @@
+
+.create-event-container {
+  min-height: 100vh;
+  background: #0b0014;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.create-event-card {
+  background: #151524;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 0 25px rgba(255, 42, 139, 0.15);
+}
+
+.create-event-card h2 {
+  color: #ff2a8b;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* GRID */
+.create-event-card .form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Inputs (STRICT SCOPING) */
+.create-event-card input[type="text"],
+.create-event-card input[type="number"],
+.create-event-card input[type="date"],
+.create-event-card input[type="time"],
+.create-event-card input[type="file"],
+.create-event-card select,
+.create-event-card textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1b1b2d;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+/* Focus */
+.create-event-card input:focus,
+.create-event-card textarea:focus,
+.create-event-card select:focus {
+  border-color: #ff2a8b;
+  box-shadow: 0 0 8px rgba(255, 42, 139, 0.4);
+}
+
+/* Textarea */
+.create-event-card textarea {
+  margin-bottom: 20px;
+  resize: none;
+}
+
+/* Button */
+.create-event-card .create-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ff2a8b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create-event-card .create-btn:hover {
+  background: #ff0f7b;
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(255, 42, 139, 0.5);
+}

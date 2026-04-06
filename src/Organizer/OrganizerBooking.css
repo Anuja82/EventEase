@@ -1,0 +1,40 @@
+.bookings-page{
+  background:#111;
+  min-height:100vh;
+  color:#fff;
+}
+
+.bookings-container{
+  width:85%;
+  margin:auto;
+  margin-top:40px;
+}
+
+.bookings-table{
+  width:100%;
+  border-collapse:collapse;
+  background:#1a1a1a;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.bookings-table th{
+  background:#ff007f;
+  padding:12px;
+  text-align:left;
+}
+
+.bookings-table td{
+  padding:12px;
+  border-bottom:1px solid #333;
+}
+
+.bookings-table tr:hover{
+  background:#222;
+}
+
+.no-bookings{
+  text-align:center;
+  margin-top:40px;
+  color:#aaa;
+}

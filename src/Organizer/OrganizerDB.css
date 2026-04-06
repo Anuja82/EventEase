@@ -1,0 +1,170 @@
+/* ===== Layout ===== */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0014, #140021);
+  color: #f1f1f1;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.admin-layout .sidebar {
+  width: 220px;
+  background: #12121c;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.admin-layout .sidebar h2 {
+  color: #ff2a8b;
+  margin-bottom: 45px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.admin-layout .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-layout .sidebar ul li {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.admin-layout .sidebar ul li:hover {
+  background-color: #1f1f2f;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.admin-layout .sidebar ul li.active {
+  background: linear-gradient(90deg, #ff2a8b, #ff0055);
+  color: white;
+  font-weight: 600;
+}
+
+.admin-layout .logout-btn {
+  margin-top: auto;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ff2a8b;
+  color: #ff2a8b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-layout .logout-btn:hover {
+  background: #ff2a8b;
+  color: white;
+}
+
+/* ===== Main Content ===== */
+.admin-layout .main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.admin-layout .main-content h1 {
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ===== Stats Cards ===== */
+.admin-layout .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.admin-layout .card {
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  background: #1c1c2e;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.admin-layout .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 42, 139, 0.15);
+}
+
+.admin-layout .card h3 {
+  font-size: 15px;
+  color: #bbb;
+  font-weight: 500;
+}
+
+.admin-layout .card p {
+  font-size: 26px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Accent indicator line */
+.admin-layout .card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #ff2a8b;
+}
+
+/* ===== Section ===== */
+.admin-layout .section {
+  background: #161625;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.admin-layout .section h2 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Table (SCOPED FIX) ===== */
+.admin-layout table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-layout th,
+.admin-layout td {
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin-layout th {
+  color: #ff2a8b;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-layout td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.admin-layout tr:hover {
+  background-color: #1f1f30;
+  transition: 0.2s ease;
+}

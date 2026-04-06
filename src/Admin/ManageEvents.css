@@ -1,0 +1,225 @@
+.manage-events {
+  padding: 30px;
+  background: #0b0014;
+  min-height: 100vh;
+}
+
+.manage-events .events-container {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.1);
+}
+
+.manage-events .top-bar h2 {
+  color: #fff;
+}
+
+.manage-events .events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.manage-events .events-table th {
+  color: #aaa;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.manage-events .events-table td {
+  color: #eee;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Status */
+.manage-events .status {
+  color: #00ffae;
+}
+
+/* Approval */
+.manage-events .approved {
+  color: #00ffae;
+}
+
+.manage-events .pending {
+  color: #ffb703;
+}
+
+/* ✅ IMPORTANT: Scoped Buttons */
+.manage-events button {
+  border: none;
+  padding: 6px 14px;
+  margin: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Approve */
+.manage-events .approve-btn {
+  background: linear-gradient(135deg, #ff2d75, #ff0080);
+  color: white;
+}
+
+/* Reject */
+.manage-events .reject-btn {
+  background: transparent;
+  border: 1px solid #ff4d6d;
+  color: #ff4d6d;
+}
+
+.manage-events .reject-btn:hover {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* Edit */
+.manage-events .edit-btn {
+  background: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.manage-events .edit-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Empty */
+.manage-events .no-data {
+  text-align: center;
+  color: #888;
+}
+/* ===== MODAL OVERLAY ===== */
+.event-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 0, 10, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ===== MODAL BOX ===== */
+.event-modal {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 30px;
+  color: #fff;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(255, 0, 128, 0.25);
+  animation: modalFade 0.25s ease;
+}
+
+/* ===== TITLE ===== */
+.event-modal h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== FORM ===== */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form input {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.modal-form input::placeholder {
+  color: #aaa;
+}
+
+/* Focus effect */
+.modal-form input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 0, 128, 0.4);
+}
+
+/* ===== BUTTONS ===== */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Save Button */
+.save-btn {
+  background: linear-gradient(135deg, #ff2d75, #ff0080);
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.6);
+}
+
+/* Cancel Button */
+.closing-btn {
+  background: transparent;
+  border: 1px solid #aaa;
+  color: #aaa;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.closing-btn:hover {
+  background: #aaa;
+  color: black;
+}
+.modal-image-preview {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.manage-events .delete-btn {
+  background: transparent;
+  border: 1px solid #ff4d6d;
+  color: #ff4d6d;
+}
+
+.manage-events .delete-btn:hover {
+  background: #ff4d6d;
+  color: white;
+}
+/* ===== ANIMATION ===== */
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

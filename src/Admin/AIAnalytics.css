@@ -1,0 +1,125 @@
+.ai-wrapper {
+
+  padding: 60px 80px;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #070010,
+    #0b001a,
+    #120022
+  );
+
+  color: white;
+
+}
+
+
+.ai-title {
+
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #ff2c93;
+
+}
+
+
+/* CARDS */
+
+.ai-card-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+
+}
+
+
+.ai-card {
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 0, 150, 0.2);
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+
+}
+
+
+.ai-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #ff2c93;
+
+  box-shadow: 0px 0px 18px rgba(255, 0, 150, 0.3);
+
+}
+
+
+.ai-card h4 {
+
+  margin-bottom: 12px;
+
+  color: #ff2c93;
+
+}
+
+
+.ai-card p {
+
+  font-size: 15px;
+
+  color: #ddd;
+
+}
+
+
+/* RECOMMENDATIONS */
+
+.ai-chart-section {
+
+  margin-top: 60px;
+
+  background: rgba(255,255,255,0.03);
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 0, 150, 0.15);
+
+}
+
+
+.ai-chart-section h3 {
+
+  color: #ff2c93;
+
+  margin-bottom: 20px;
+
+}
+
+
+.ai-chart-section ul {
+
+  list-style: none;
+
+  padding-left: 0;
+
+}
+
+
+.ai-chart-section li {
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}

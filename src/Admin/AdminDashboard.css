@@ -1,0 +1,170 @@
+
+
+.admin-dashboard .admin-layout{
+display:flex;
+min-height:100vh;
+background: linear-gradient(135deg,#0b0014,#140021);
+color:#f1f1f1;
+font-family:"Segoe UI",sans-serif;
+}
+
+
+
+
+.admin-dashboard .sidebar{
+width:220px;
+background:#12121c;
+padding:30px 20px;
+display:flex;
+flex-direction:column;
+border-right:1px solid rgba(255,255,255,0.05);
+}
+
+.admin-dashboard .sidebar h2{
+color:#ff2a8b;
+margin-bottom:45px;
+font-size:22px;
+}
+
+.admin-dashboard .sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.admin-dashboard .sidebar ul li{
+padding:12px 15px;
+margin-bottom:12px;
+cursor:pointer;
+border-radius:8px;
+transition:0.3s;
+font-size:14px;
+color:#ccc;
+}
+
+.admin-dashboard .sidebar ul li:hover{
+background:#1f1f2f;
+color:#fff;
+transform:translateX(5px);
+}
+
+.admin-dashboard .sidebar ul li.active{
+background:linear-gradient(90deg,#ff2a8b,#ff0055);
+color:white;
+font-weight:600;
+}
+
+
+
+
+
+.admin-dashboard .logout-btn{
+margin-top:auto;
+padding:10px;
+background:transparent;
+border:1px solid #ff2a8b;
+color:#ff2a8b;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.admin-dashboard .logout-btn:hover{
+background:#ff2a8b;
+color:white;
+}
+
+
+
+
+
+.admin-dashboard .main-content{
+flex:1;
+padding:40px;
+}
+
+.admin-dashboard .main-content h1{
+margin-bottom:35px;
+font-size:24px;
+}
+
+
+
+
+
+.admin-dashboard .cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-bottom:45px;
+}
+
+.admin-dashboard .card{
+padding:25px;
+border-radius:14px;
+text-align:center;
+background:#1c1c2e;
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.admin-dashboard .card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,42,139,0.15);
+}
+
+.admin-dashboard .card h3{
+font-size:15px;
+color:#bbb;
+}
+
+.admin-dashboard .card p{
+font-size:26px;
+margin-top:10px;
+font-weight:bold;
+}
+
+
+
+
+
+.admin-dashboard .section{
+background:#161625;
+padding:30px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.05);
+margin-bottom:30px;
+}
+
+.admin-dashboard .section h2{
+margin-bottom:20px;
+}
+
+
+
+
+
+.admin-dashboard .chart-placeholder{
+height:220px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#1c1c2e;
+border-radius:10px;
+color:#999;
+} 
+
+.badge {
+
+  background: #ff2a8b;
+
+  color: white;
+
+  padding: 2px 8px;
+
+  border-radius: 12px;
+
+  font-size: 12px;
+
+  margin-left: 8px;
+
+}
