@@ -1,7 +1,7 @@
 # 🎟️ EventEase — Full Stack Event Booking & Management Platform
 
 EventEase is a full-stack event management and booking platform built using React and Django REST Framework.  
-It supports complete event discovery, booking workflows, organizer dashboards, automated notifications, analytics, AI assistance, and client event hosting requests.
+It supports complete event discovery, booking workflows, organizer dashboards, automated notifications, analytics, chatbot and client event hosting requests.
 
 Designed as a production-style portfolio project demonstrating real-world workflow automation and scalable architecture.
 
@@ -202,7 +202,7 @@ public/ → Static assets
 ✔ Admin analytics dashboard with revenue insights  
 ✔ Ticket PDF download feature  
 ✔ Wishlist interaction system  
-✔ AI analytics assistant integration  
+✔ Analytics and automation-based system integration  
 ✔ Help chatbot module  
 ✔ Blog engagement module
 
