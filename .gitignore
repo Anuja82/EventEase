@@ -32,6 +32,7 @@ backend/staticfiles/
 backend/.env
 __pycache__/
 *.pyc
+media/
 
 # Environment variables
 backend/.env
