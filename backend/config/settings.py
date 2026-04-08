@@ -28,10 +28,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t)9s7u^=pr=)xa(x4gc5n2^vl+b%_+$_-$m_fz__tgk@acw*yq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
+DEBUG = os.getenv("DEBUG", "True") == "True"
+
+# ALLOWED_HOSTS = ['127.0.0.1','localhost']
+# ALLOWED_HOSTS =['*']
+ALLOWED_HOSTS = os.getenv(
+    "ALLOWED_HOSTS",
+    "127.0.0.1,localhost"
+).split(",")
 
 
 # Application definition
@@ -135,7 +142,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
