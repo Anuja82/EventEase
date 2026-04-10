@@ -41,9 +41,7 @@ ALLOWED_HOSTS = [
     'eventease-backend-3y8m.onrender.com',
     'eventease-app.vercel.app'
 ]
-CORS_ALLOWED_ORIGINS = [
-    "https://eventease-app.vercel.app"
-]
+
 
 # Application definition
 
