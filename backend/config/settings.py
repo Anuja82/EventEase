@@ -101,9 +101,7 @@ DATABASES = {
     )
 }
 
-CORS_ALLOWED_ORIGINS = [
-    "https://eventease-blsjdzmfe-anuja82s-projects.vercel.app",
-]
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
