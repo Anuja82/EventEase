@@ -62,7 +62,7 @@ function ManageOrganizers() {
   const handleDelete = async (requestId) => {
     try {
       //await axios.delete(`http://127.0.0.1:8000/api/approve-delete/${requestId}/`);
-      await axios.put(`http://127.0.0.1:8000/api/approve-delete/${requestId}/`);
+      await axios.put(`${API_BASE_URL}/api/approve-delete/${requestId}/`);
       fetchOrganizers();
     } catch (error) {
       console.log(error);

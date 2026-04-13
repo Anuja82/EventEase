@@ -148,7 +148,7 @@ function Dashboard() {
   };
 
 
-  // ❤️ OPEN WISHLIST MODAL
+  //  OPEN WISHLIST MODAL
 
   const openWishlistModal = () => {
 
@@ -166,7 +166,7 @@ function Dashboard() {
   };
 
 
-  // 🔔 OPEN NOTIFICATION MODAL
+  //  OPEN NOTIFICATION MODAL
 
   const openNotificationModal = () => {
 

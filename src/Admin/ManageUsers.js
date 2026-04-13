@@ -24,7 +24,8 @@ function ManageUsers() {
     setLoading(true);
 
     axios
-      .get("http://127.0.0.1:8000/api/admin-users/")
+      //.get("http://127.0.0.1:8000/api/admin-users/")
+      .get(`${API_BASE_URL}/api/admin-users/`)
       .then((res) => {
         setUsers(res.data);
       })
