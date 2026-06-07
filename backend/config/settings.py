@@ -144,7 +144,7 @@ USE_TZ = True
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://your-app-name.vercel.app",   # ← Replace with your actual Vercel URL after deploying
+    "https://event-easeapp.vercel.app",   # ← Replace with your actual Vercel URL after deploying
 ]
 CORS_ALLOW_CREDENTIALS = True
 
