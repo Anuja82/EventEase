@@ -39,6 +39,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     'eventease-backend-3y8m.onrender.com',
+    '.onrender.com', 
     
 ]
 
