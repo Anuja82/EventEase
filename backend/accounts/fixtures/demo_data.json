@@ -1,0 +1,447 @@
+[
+  {
+    "model": "accounts.register",
+    "pk": 7,
+    "fields": {
+      "username": "Akhil",
+      "email": "organizer1@eventease.com",
+      "password": "demo1234",
+      "confirm_password": "demo1234",
+      "created_at": "2026-01-01T00:00:00Z",
+      "role": "organizer",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.register",
+    "pk": 10,
+    "fields": {
+      "username": "Aswathy",
+      "email": "organizer2@eventease.com",
+      "password": "demo1234",
+      "confirm_password": "demo1234",
+      "created_at": "2026-01-01T00:00:00Z",
+      "role": "organizer",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.register",
+    "pk": 11,
+    "fields": {
+      "username": "Amal",
+      "email": "organizer3@eventease.com",
+      "password": "demo1234",
+      "confirm_password": "demo1234",
+      "created_at": "2026-01-01T00:00:00Z",
+      "role": "organizer",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.register",
+    "pk": 12,
+    "fields": {
+      "username": "Krishna",
+      "email": "organizer4@eventease.com",
+      "password": "demo1234",
+      "confirm_password": "demo1234",
+      "created_at": "2026-01-01T00:00:00Z",
+      "role": "organizer",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.register",
+    "pk": 16,
+    "fields": {
+      "username": "Athul",
+      "email": "organizer5@eventease.com",
+      "password": "demo1234",
+      "confirm_password": "demo1234",
+      "created_at": "2026-01-01T00:00:00Z",
+      "role": "organizer",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 12,
+    "fields": {
+      "title": "AI Innovation Summit",
+      "category": "Technology",
+      "date": "2026-12-05",
+      "time": "10:00:00",
+      "venue": "Tech Convention Center, Kochi",
+      "price": "499.00",
+      "total_seats": 150,
+      "available_seats": 146,
+      "description": "Explore latest trends in AI, Machine Learning and startups",
+      "image": "event_images/Blog3.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-18T15:42:44.537Z",
+      "organizer": 7
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 14,
+    "fields": {
+      "title": "Food Carnival 2026",
+      "category": "Business",
+      "date": "2026-12-05",
+      "time": "10:00:00",
+      "venue": "Marine Drive, Kochi",
+      "price": "299.00",
+      "total_seats": 300,
+      "available_seats": 295,
+      "description": "A vibrant food festival with stalls, live cooking, and cultural programs.",
+      "image": "event_images/event4.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-24T14:04:31.794Z",
+      "organizer": 10
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 15,
+    "fields": {
+      "title": "Film Festival",
+      "category": "Music",
+      "date": "2026-12-08",
+      "time": "17:00:00",
+      "venue": "Tagore Theatre, Trivandrum",
+      "price": "499.00",
+      "total_seats": 200,
+      "available_seats": 200,
+      "description": "Film screenings, celebrity talks, and cultural performances.",
+      "image": "event_images/event5.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-24T14:07:46.317Z",
+      "organizer": 10
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 16,
+    "fields": {
+      "title": "TechWave Conference",
+      "category": "Technology",
+      "date": "2026-12-15",
+      "time": "09:00:00",
+      "venue": "Infopark, Kochi",
+      "price": "299.00",
+      "total_seats": 250,
+      "available_seats": 248,
+      "description": "Talks on AI, web development, startups, and innovation.",
+      "image": "event_images/event6.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-24T14:10:51.443Z",
+      "organizer": 10
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 17,
+    "fields": {
+      "title": "Gaming Expo 2026",
+      "category": "Technology",
+      "date": "2026-12-20",
+      "time": "11:00:00",
+      "venue": "BIEC, Bangalore",
+      "price": "300.00",
+      "total_seats": 400,
+      "available_seats": 397,
+      "description": "Exports tournaments, VR gaming, and live demos",
+      "image": "event_images/event7.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-24T14:20:08.998Z",
+      "organizer": 10
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 18,
+    "fields": {
+      "title": "Music Event",
+      "category": "Music",
+      "date": "2026-12-15",
+      "time": "18:00:00",
+      "venue": "Grand Arena Hall, Kochi",
+      "price": "300.00",
+      "total_seats": 120,
+      "available_seats": 120,
+      "description": "Experience live DJ performances, lights, and electrifying energy.",
+      "image": "event_images/event1.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T04:18:26.352Z",
+      "organizer": 11
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 19,
+    "fields": {
+      "title": "TechConnect Summit",
+      "category": "Technology",
+      "date": "2026-12-08",
+      "time": "10:00:00",
+      "venue": "Innovation Hub, Trivandrum",
+      "price": "599.00",
+      "total_seats": 80,
+      "available_seats": 79,
+      "description": "Where innovation meets creativity. Join industry leaders.",
+      "image": "event_images/techsummit_jxtANaS.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T04:21:39.402Z",
+      "organizer": 11
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 20,
+    "fields": {
+      "title": "Modern Art Expo",
+      "category": "Business",
+      "date": "2026-12-25",
+      "time": "11:00:00",
+      "venue": "Expo Center Hall B, Bangalore",
+      "price": "499.00",
+      "total_seats": 150,
+      "available_seats": 150,
+      "description": "Discover stunning artworks by emerging creators.",
+      "image": "event_images/event3.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T04:25:22.941Z",
+      "organizer": 11
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 21,
+    "fields": {
+      "title": "Electric Nights",
+      "category": "Music",
+      "date": "2026-12-08",
+      "time": "19:00:00",
+      "venue": "Aurora Arena, Neo City",
+      "price": "599.00",
+      "total_seats": 300,
+      "available_seats": 297,
+      "description": "A high-energy EDM night featuring top DJs, immersive lighting, and a crowd-pumping experience.",
+      "image": "event_images/musicfest.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:19:30.898Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 22,
+    "fields": {
+      "title": "Fashion Week",
+      "category": "Business",
+      "date": "2026-12-10",
+      "time": "18:00:00",
+      "venue": "Luxe Pavilion, Style City",
+      "price": "499.00",
+      "total_seats": 150,
+      "available_seats": 150,
+      "description": "Experience the latest fashion trends, designer showcases, and live runway shows",
+      "image": "event_images/fashion.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:22:36.694Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 23,
+    "fields": {
+      "title": "Music Fest",
+      "category": "Music",
+      "date": "2026-12-16",
+      "time": "18:30:00",
+      "venue": "Harmony Grounds, Metro City",
+      "price": "699.00",
+      "total_seats": 200,
+      "available_seats": 200,
+      "description": "A grand music festival featuring live bands, DJs, and an electrifying atmosphere.",
+      "image": "event_images/fest.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:26:21.378Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 24,
+    "fields": {
+      "title": "Winter Carnival",
+      "category": "Business",
+      "date": "2026-12-13",
+      "time": "11:00:00",
+      "venue": "Snowfield Park, North Zone",
+      "price": "299.00",
+      "total_seats": 250,
+      "available_seats": 250,
+      "description": "Enjoy games, food stalls, live shows, and festive vibes in a winter-themed carnival",
+      "image": "event_images/wintercarnival.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:29:51.575Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 25,
+    "fields": {
+      "title": "Festival of Colours",
+      "category": "Workshop",
+      "date": "2026-12-22",
+      "time": "15:00:00",
+      "venue": "Celebration Grounds, Unity Square",
+      "price": "399.00",
+      "total_seats": 700,
+      "available_seats": 700,
+      "description": "Celebrate colors, music, and joy with friends in a vibrant outdoor event.",
+      "image": "event_images/holi_zZ9HQY8.jpeg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:32:56.576Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 26,
+    "fields": {
+      "title": "AI & Big Data Expo",
+      "category": "Workshop",
+      "date": "2026-12-28",
+      "time": "09:00:00",
+      "venue": "DataHub Center, Smart City",
+      "price": "599.00",
+      "total_seats": 250,
+      "available_seats": 250,
+      "description": "AI trends, big data tools, and innovations shaping the future.",
+      "image": "event_images/ai.jpg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:35:20.156Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 27,
+    "fields": {
+      "title": "CES Tech Showcase",
+      "category": "Workshop",
+      "date": "2026-12-19",
+      "time": "18:00:00",
+      "venue": "Future Expo Hall, Digital City",
+      "price": "499.00",
+      "total_seats": 300,
+      "available_seats": 300,
+      "description": "A showcase of cutting-edge gadgets, startups, and next-gen technology solutions.",
+      "image": "event_images/cse.jpg",
+      "status": "Active",
+      "created_at": "2026-03-30T05:37:51.551Z",
+      "organizer": 12
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 28,
+    "fields": {
+      "title": "Startup Launchpad",
+      "category": "Workshop",
+      "date": "2026-12-04",
+      "time": "14:00:00",
+      "venue": "Innovation Studio, Trivandrum",
+      "price": "299.00",
+      "total_seats": 200,
+      "available_seats": 200,
+      "description": "A hands-on workshop designed for aspiring entrepreneurs. Learn how to validate ideas, build MVPs, and pitch effectively.",
+      "image": "event_images/sl.jpg",
+      "status": "Active",
+      "created_at": "2026-04-01T07:23:10.543Z",
+      "organizer": 16
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 29,
+    "fields": {
+      "title": "City Football League",
+      "category": "Sports",
+      "date": "2026-12-17",
+      "time": "17:00:00",
+      "venue": "Grand Sports Arena, Metro City",
+      "price": "499.00",
+      "total_seats": 400,
+      "available_seats": 400,
+      "description": "Watch the top teams compete in an intense football final filled with energy and excitement.",
+      "image": "event_images/cf.jpg",
+      "status": "Active",
+      "created_at": "2026-04-01T07:26:52.903Z",
+      "organizer": 16
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 30,
+    "fields": {
+      "title": "National Basketball Showdown",
+      "category": "Sports",
+      "date": "2026-12-30",
+      "time": "18:30:00",
+      "venue": "Indoor Sports Complex, Central Zone",
+      "price": "599.00",
+      "total_seats": 300,
+      "available_seats": 299,
+      "description": "Experience high-speed basketball action with top players battling for the championship.",
+      "image": "event_images/nb.jpg",
+      "status": "Active",
+      "created_at": "2026-04-01T07:31:35.481Z",
+      "organizer": 16
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 31,
+    "fields": {
+      "title": "Marathon Challenge",
+      "category": "Sports",
+      "date": "2026-12-21",
+      "time": "06:00:00",
+      "venue": "Riverside Track, Green City",
+      "price": "299.00",
+      "total_seats": 200,
+      "available_seats": 200,
+      "description": "Join the ultimate endurance challenge. Open for all fitness levels with exciting rewards.",
+      "image": "event_images/mc.jpg",
+      "status": "Active",
+      "created_at": "2026-04-01T07:34:44.300Z",
+      "organizer": 16
+    }
+  },
+  {
+    "model": "accounts.event",
+    "pk": 32,
+    "fields": {
+      "title": "Indoor Badminton Championship",
+      "category": "Sports",
+      "date": "2026-12-28",
+      "time": "16:00:00",
+      "venue": "Smash Arena, Sports Hub",
+      "price": "399.00",
+      "total_seats": 200,
+      "available_seats": 200,
+      "description": "A competitive badminton event featuring top regional players and thrilling matches.",
+      "image": "event_images/bc.jpg",
+      "status": "Active",
+      "created_at": "2026-04-01T07:38:20.414Z",
+      "organizer": 16
+    }
+  }
+]
