@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Django backend files
-backend/db.sqlite3
+# backend/db.sqlite3
 backend/__pycache__/
 backend/*.pyc
 backend/venv/
