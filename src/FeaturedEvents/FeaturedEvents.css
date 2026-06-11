@@ -23,6 +23,7 @@
 .event-card{
     flex:0 0 auto;
     width:260px;
+    height:320px;
     background: linear-gradient(180deg,#1a1a2e,#111);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(255,0,128,0.2);
