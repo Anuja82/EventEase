@@ -128,3 +128,62 @@
 
   
 }
+/* Hamburger button */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .hamburger-btn {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    margin-top: 10px;
+    background: #111;
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-search input {
+    width: 100%;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+}

@@ -243,3 +243,13 @@
 }
 
 }
+/* Demo banner */
+.demo-banner {
+  background: #2a1a00;
+  border: 1px solid #BA7517;
+  color: #EF9F27;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}

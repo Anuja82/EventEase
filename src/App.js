@@ -1,6 +1,5 @@
 import React from 'react';
-import { Routes,Route } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import './App.css';
 import HeroSection from './HeroSection/HeroSection';
@@ -45,69 +44,75 @@ import BlogDetails from './Blog/BlogDetails';
 import HostEvent from './HostEvent/HostEvent';
 import AdminClientRequests from './Admin/AdminClientRequests';
 import AdminLogin from './Admin/AdminLogin';
-function App(){
-  useEffect(()=>{
-    AOS.init({duration:1000,once:true});
-  },[]);
-  return(
-    <div className='App'>
-      <NavBar/>
-        <Routes>
-        {/* Home Page */}
-        <Route
-          path="/"
-          element={
-            <>
-      <HeroSection/>
- 
-      <About/>
-     
-      <FeaturedEvents/>
-      <PopularEvents/>
-      <UpcomingEvents/>
-      <Testimonials/>
-       <Partners/>
-      <EventHighlight/>
-      <Blog/>
-      
-      </>
-          }
-          />
-           <Route path="/about" element={<AboutPage />} />
-           <Route path='/event' element={<EventPage />} />
-           <Route path='/blog' element={<BlogPage/>}    />
-           <Route path='/shows' element={<Shows/>}/>
-           <Route path='/auth' element={<User />} />
-           <Route path='/dashboard' element={<Dashboard/>}/>
-           <Route path="/create-event" element={<CreateEvent />} />
-           <Route path="/organizer-dashboard" element={<OrganizerDB />} />
-           <Route path="/myevents" element={<MyEvents />} />
-           <Route path="/shows/:category" element={<Shows />} />
-           <Route path="/organizer-profile" element={<OrganizerProfile />} />
-           <Route path="/event/:id" element={<EventDetails />} />
-           <Route path="/book/:id" element={<BookingPage />} />
-           <Route path="/payment" element={<PaymentPage />} />
-           <Route path="/booking-success" element={<BookingSuccess />} />
-           <Route path="/view-ticket" element={<ViewTicket />} />
-           <Route path="/organizer-bookings" element={<OrganizerBooking />} />
-           <Route path="/search" element={<SearchResults />} />
-           <Route path="/admin-dashboard" element={<AdminDashboard />} />
-           <Route path="/admin-users" element={<ManageUsers />} />
-           <Route path="/admin-organizers" element={<ManageOrganizers />} />
-           <Route path="/admin-events" element={<ManageEvents />} />
-           <Route path="/admin-bookings" element={<ViewBookings />} />
-           <Route path="/admin-revenue" element={<RevenueAnalytics />} />
-           <Route path="/admin-ai" element={<AIAnalytics />} />
-           <Route path='/help' element={<HelpAI />} />
-           <Route path="/blog-details/:id" element={<BlogDetails />} />
-           <Route path="/host-event" element={<HostEvent />} />
-           <Route path="/admin-client-requests" element={<AdminClientRequests />} />
-           <Route path="/admin-login" element={<AdminLogin />} />
+import NotFound from './NotFound/NotFound';
+import ProtectedRoute from './components/ProtectedRoute';
 
-           
-           </Routes>
-      <Newsletter/>
-      
+function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  return (
+    <div className='App'>
+      <NavBar />
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={
+          <>
+            <HeroSection />
+            <About />
+            <FeaturedEvents />
+            <PopularEvents />
+            <UpcomingEvents />
+            <Testimonials />
+            <Partners />
+            <EventHighlight />
+            <Blog />
+            <Newsletter />
+          </>
+        } />
+
+        {/* Public routes */}
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/event" element={<EventPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog-details/:id" element={<BlogDetails />} />
+        <Route path="/shows" element={<Shows />} />
+        <Route path="/shows/:category" element={<Shows />} />
+        <Route path="/event/:id" element={<EventDetails />} />
+        <Route path="/auth" element={<User />} />
+        <Route path="/search" element={<SearchResults />} />
+        <Route path="/help" element={<HelpAI />} />
+        <Route path="/host-event" element={<HostEvent />} />
+
+        {/* User protected routes */}
+        <Route path="/dashboard" element={<ProtectedRoute element={<Dashboard />} allowedRoles={["user"]} />} />
+        <Route path="/book/:id" element={<ProtectedRoute element={<BookingPage />} allowedRoles={["user"]} />} />
+        <Route path="/payment" element={<ProtectedRoute element={<PaymentPage />} allowedRoles={["user"]} />} />
+        <Route path="/booking-success" element={<ProtectedRoute element={<BookingSuccess />} allowedRoles={["user"]} />} />
+        <Route path="/view-ticket" element={<ProtectedRoute element={<ViewTicket />} allowedRoles={["user"]} />} />
+
+        {/* Organizer protected routes */}
+        <Route path="/organizer-dashboard" element={<ProtectedRoute element={<OrganizerDB />} allowedRoles={["organizer"]} />} />
+        <Route path="/create-event" element={<ProtectedRoute element={<CreateEvent />} allowedRoles={["organizer"]} />} />
+        <Route path="/myevents" element={<ProtectedRoute element={<MyEvents />} allowedRoles={["organizer"]} />} />
+        <Route path="/organizer-profile" element={<ProtectedRoute element={<OrganizerProfile />} allowedRoles={["organizer"]} />} />
+        <Route path="/organizer-bookings" element={<ProtectedRoute element={<OrganizerBooking />} allowedRoles={["organizer"]} />} />
+
+        {/* Admin protected routes */}
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin-dashboard" element={<ProtectedRoute element={<AdminDashboard />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-users" element={<ProtectedRoute element={<ManageUsers />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-organizers" element={<ProtectedRoute element={<ManageOrganizers />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-events" element={<ProtectedRoute element={<ManageEvents />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-bookings" element={<ProtectedRoute element={<ViewBookings />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-revenue" element={<ProtectedRoute element={<RevenueAnalytics />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-ai" element={<ProtectedRoute element={<AIAnalytics />} allowedRoles={["admin"]} />} />
+        <Route path="/admin-client-requests" element={<ProtectedRoute element={<AdminClientRequests />} allowedRoles={["admin"]} />} />
+
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
