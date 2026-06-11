@@ -83,3 +83,6 @@
   transform: scale(1.02);
   box-shadow: 0 0 12px rgba(255, 42, 139, 0.5);
 }
+@media (max-width: 768px) {
+  .create-event-card { width: 95%; padding: 25px 20px; }
+}

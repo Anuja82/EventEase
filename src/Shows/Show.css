@@ -222,3 +222,17 @@
 
 }
 
+@media (max-width: 768px) {
+  .shows-hero { padding: 40px 5%; }
+  .shows-overlay h1 { font-size: 2rem; }
+  .shows-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+  }
+  .show-card img { height: 150px; }
+  .event-title { font-size: 15px; }
+}
+@media (max-width: 480px) {
+  .shows-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .shows-overlay h1 { font-size: 1.5rem; }
+}

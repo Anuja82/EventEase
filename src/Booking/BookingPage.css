@@ -193,3 +193,13 @@
 .step-line.active{
   background: linear-gradient(45deg,#ff007f,#ff4da6);
 }
+@media (max-width: 768px) {
+  .booking-container { padding: 20px 15px; }
+  .booking-card { width: 100%; padding: 20px; }
+  .step-line { width: 40px; }
+}
+@media (max-width: 480px) {
+  .step p { font-size: 10px; }
+  .step-line { width: 25px; }
+}
+ 

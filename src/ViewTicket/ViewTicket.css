@@ -124,3 +124,8 @@
   transform:translateY(-3px);
   box-shadow:0 10px 30px rgba(255,0,127,0.4);
 }
+@media (max-width: 768px) {
+  .ticket-container { padding: 20px 15px; }
+  .ticket-card { width: 100%; padding: 20px; }
+}
+ 

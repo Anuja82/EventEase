@@ -168,3 +168,11 @@ color:#999;
   margin-left: 8px;
 
 }
+@media (max-width: 768px) {
+  .admin-layout { flex-direction: column; }
+  .admin-layout .sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; padding: 15px; }
+  .admin-layout .sidebar ul { display: flex; flex-wrap: wrap; gap: 8px; }
+  .admin-layout .sidebar ul li { padding: 8px 12px; margin-bottom: 0; font-size: 12px; }
+  .admin-layout .main-content { padding: 20px 15px; }
+}
+ 

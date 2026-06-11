@@ -137,3 +137,14 @@
   font-size: 18px;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .event-details-page .event-image-wrapper { height: 220px; }
+  .event-details-page .event-content { padding: 20px; }
+  .event-details-page .event-meta { grid-template-columns: 1fr 1fr; }
+  .event-details-page .saas-container { padding: 30px 15px; }
+}
+@media (max-width: 480px) {
+  .event-details-page .event-meta { grid-template-columns: 1fr; }
+  .event-details-page .event-image-wrapper { height: 180px; }
+}
+ 
