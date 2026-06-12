@@ -21,7 +21,7 @@ function ViewBookings() {
       //.get("http://127.0.0.1:8000/api/admin-bookings/")
       .get(`${API_BASE_URL}/api/admin-bookings/`)
       .then((res) => setBookings(res.data))
-      .catch((err) => console.log(err))
+      .catch(() => {})
       .finally(() => setLoading(false));
   };
 

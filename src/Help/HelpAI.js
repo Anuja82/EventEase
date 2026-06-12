@@ -52,7 +52,6 @@ function HelpAI() {
 
     } catch (error) {
 
-      console.log("CHATBOT ERROR:", error);
 
       setChat(prev => [
         ...prev,

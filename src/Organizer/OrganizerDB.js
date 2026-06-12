@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -27,8 +26,6 @@ function OrganizerDB() {
   const username = localStorage.getItem("username");
 
   useEffect(() => {
-    console.log("EMAIL:", email);
-    console.log("ROLE:", role);
 
     //  Protect route
     if (role !== "organizer") {
@@ -38,7 +35,6 @@ function OrganizerDB() {
 
     //  If email missing → go back to login
     if (!email) {
-      console.log("❌ Email missing → redirecting");
       navigate("/auth");
       return;
     }
@@ -57,16 +53,12 @@ function OrganizerDB() {
         }
       );
 
-      console.log("DATA:", res.data);
 
       setEvents(res.data.events);
       setStats(res.data.stats);
 
     } catch (error) {
-      console.log(
-        "❌ Dashboard error:",
-        error.response?.data || error.message
-      );
+      // error handled silently
     }
   };
 

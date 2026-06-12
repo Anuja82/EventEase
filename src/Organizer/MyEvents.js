@@ -31,7 +31,6 @@ const MyEvents = () => {
       );
       setEvents(res.data);
     } catch (error) {
-      console.error("Error fetching events:", error);
     }
   };
 
@@ -45,7 +44,6 @@ const MyEvents = () => {
       );
       fetchMyEvents();
     } catch (error) {
-      console.error("Delete failed", error);
     }
   };
 
@@ -80,7 +78,6 @@ const MyEvents = () => {
       setEditEventId(null);
       fetchMyEvents();
     } catch (error) {
-      console.error("Update failed", error);
     }
   };
 

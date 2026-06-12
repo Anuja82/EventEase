@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -30,7 +29,6 @@ const EventDetails = () => {
 
       } catch (error) {
 
-        console.error("Error fetching event details", error);
 
       }
 

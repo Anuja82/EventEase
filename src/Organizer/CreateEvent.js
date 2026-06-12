@@ -71,7 +71,6 @@ function CreateEvent() {
       navigate(`/shows/${categoryPath}`);
 
     } catch (error) {
-      console.error(error);
       alert("Something went wrong ❌");
     }
   };

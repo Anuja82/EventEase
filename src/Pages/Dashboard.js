@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import PageHeader from "../PageHeader/PageHeader";
 import "./Dashboard.css";
@@ -7,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import API_BASE_URL from "../api";
 
 function Dashboard() {
+  useEffect(() => { document.title = "EventEase | Dashboard"; }, []);
 
   const navigate = useNavigate();
 
@@ -141,7 +141,6 @@ function Dashboard() {
 
     } catch (err) {
 
-      console.log(err);
 
     }
 
@@ -603,6 +602,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
-
-

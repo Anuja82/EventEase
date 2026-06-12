@@ -32,7 +32,6 @@ const Show = () => {
       );
       setEvents(res.data);
     } catch (error) {
-      console.log(error);
     }
   };
 
@@ -53,7 +52,6 @@ const Show = () => {
       setWishlist(ids);
 
     } catch (error) {
-      console.log(error);
     }
 
   };
@@ -99,7 +97,6 @@ const Show = () => {
     }
 
     catch (error) {
-      console.log(error);
     }
 
   };

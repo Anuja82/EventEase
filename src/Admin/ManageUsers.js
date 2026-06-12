@@ -29,7 +29,7 @@ function ManageUsers() {
       .then((res) => {
         setUsers(res.data);
       })
-      .catch((err) => console.log(err))
+      .catch(() => {})
       .finally(() => setLoading(false));
   };
 
@@ -49,7 +49,7 @@ function ManageUsers() {
       .get(`${API_BASE_URL}/api/search-users/?search=${value}`)
       
       .then((res) => setUsers(res.data))
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
 
   // Block / Unblock user
@@ -61,7 +61,7 @@ function ManageUsers() {
      .put(`${API_BASE_URL}/api/toggle-user-status/${id}/`)
   
       .then(() => fetchUsers())
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
   // View booking history
   const viewBookings = (user) => {
@@ -75,7 +75,7 @@ function ManageUsers() {
         setBookings(res.data);
         setShowModal(true);
       })
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
 
   // Delete user
@@ -88,7 +88,7 @@ function ManageUsers() {
       //.delete(`http://127.0.0.1:8000/api/delete-user/${id}/`)
       .delete(`${API_BASE_URL}/api/delete-user/${id}/`)
       .then(() => fetchUsers())
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
 
   
