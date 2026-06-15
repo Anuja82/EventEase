@@ -33,6 +33,7 @@ from django.utils.http import urlsafe_base64_encode
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_decode
 from .models import NewsletterSubscriber
+from django.contrib.auth.hashers import make_password, check_password
 
 
 
@@ -65,8 +66,8 @@ def register_user(request):
         Register.objects.create(
             username=username,
             email=email,
-            password=password,
-            confirm_password=confirm_password,
+            password=make_password(password),
+            confirm_password=make_password(password),
             role=role
         )
 
@@ -88,7 +89,7 @@ def login_user(request):
         try:
             user = Register.objects.get(email=email)
 
-            if user.password == password:
+            if check_password(password, user.password):
                 return JsonResponse({
                     "message": "Login successful",
                     "user_id": user.id,      
@@ -186,8 +187,8 @@ def update_profile(request):
 
     new_password = request.data.get("password")
     if new_password:
-        user.password = new_password
-        user.confirm_password = new_password
+        user.password = make_password(new_password)
+        user.confirm_password = make_password(new_password)
 
     user.save()
 
@@ -1633,8 +1634,8 @@ def reset_password(request, uid):
 
     password = request.data.get("password")
 
-    user.password = password
-    user.confirm_password = password
+    user.password = make_password(password)
+    user.confirm_password = make_password(password)
 
     user.save()
 
@@ -1684,8 +1685,8 @@ def admin_register(request):
     Register.objects.create(
         username=username,
         email=email,
-        password=password,
-        confirm_password=confirm_password,
+        password=make_password(password),
+        confirm_password=make_password(password),
         role="admin"
     )
 
@@ -1701,9 +1702,13 @@ def admin_login(request):
     try:
         admin = Register.objects.get(
             email=email,
-            password=password,
             role="admin"
         )
+
+        if not check_password(password, admin.password):
+            return Response({
+                "message": "Invalid admin credentials"
+            })
 
         return Response({
             "message": "Admin login successful",
