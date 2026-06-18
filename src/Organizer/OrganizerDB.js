@@ -3,11 +3,13 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./OrganizerDB.css";
 import API_BASE_URL from "../api";
+import Spinner from "../components/Spinner";
 import PageHeader from "../PageHeader/PageHeader";
 
 function OrganizerDB() {
   const navigate = useNavigate();
 
+  const [loading, setLoading] = useState(true);
   const [events, setEvents] = useState([]);
   const [stats, setStats] = useState({
     total_events: 0,

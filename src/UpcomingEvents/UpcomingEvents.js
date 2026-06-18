@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./UpcomingEvents.css";
 import API_BASE_URL from "../api";
+import Spinner from "../components/Spinner";
 
 
 const UpcomingEvents = () => {
@@ -52,7 +53,6 @@ const UpcomingEvents = () => {
 
     catch (error) {
 
-      console.log(error);
 
     }
 

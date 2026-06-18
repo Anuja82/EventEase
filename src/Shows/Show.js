@@ -4,12 +4,14 @@ import { useNavigate, useParams } from "react-router-dom";
 import PageHeader from "../PageHeader/PageHeader";
 import "./Show.css";
 import API_BASE_URL from "../api";
+import Spinner from "../components/Spinner";
 
 const Show = () => {
 
   const [events, setEvents] = useState([]);
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [wishlist, setWishlist] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const { category } = useParams();
 

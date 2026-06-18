@@ -4,6 +4,7 @@ import "./Dashboard.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import API_BASE_URL from "../api";
+import Spinner from "../components/Spinner";
 
 function Dashboard() {
   useEffect(() => { document.title = "EventEase | Dashboard"; }, []);

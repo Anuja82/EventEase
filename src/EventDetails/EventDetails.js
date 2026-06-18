@@ -4,6 +4,7 @@ import axios from "axios";
 import PageHeader from "../PageHeader/PageHeader";
 import "./EventDetails.css";
 import API_BASE_URL from "../api";
+import Spinner from "../components/Spinner";
 
 const EventDetails = () => {
 
@@ -11,6 +12,7 @@ const EventDetails = () => {
 
   const navigate = useNavigate();
 
+  const [loading, setLoading] = useState(true);
   const [event, setEvent] = useState(null);
 
 
