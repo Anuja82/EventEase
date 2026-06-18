@@ -1,0 +1,57 @@
+.spinner-overlay {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.spinner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Ring spinner */
+.spinner-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.spinner-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  margin: 6px;
+  border: 5px solid transparent;
+  border-top-color: #ff007f;
+  border-radius: 50%;
+  animation: spinner-rotate 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.spinner-ring div:nth-child(1) { animation-delay: -0.30s; border-top-color: #ff007f; }
+.spinner-ring div:nth-child(2) { animation-delay: -0.20s; border-top-color: #cc00cc; }
+.spinner-ring div:nth-child(3) { animation-delay: -0.10s; border-top-color: #7b00ff; }
+.spinner-ring div:nth-child(4) { animation-delay: 0s;     border-top-color: #ff4da6; }
+
+@keyframes spinner-rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner-message {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1; }
+}
