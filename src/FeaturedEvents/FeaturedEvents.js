@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import "./FeaturedEvents.css";
 import API_BASE_URL from "../api";
-import Spinner from "../components/Spinner";
+import Spinner from "../Spinner";
 
 const FeaturedEvents = () => {
 

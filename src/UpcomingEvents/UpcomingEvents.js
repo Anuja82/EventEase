@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./UpcomingEvents.css";
 import API_BASE_URL from "../api";
-import Spinner from "../components/Spinner";
+import Spinner from "../Spinner";
 
 
 const UpcomingEvents = () => {
