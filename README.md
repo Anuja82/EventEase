@@ -214,7 +214,7 @@ Online payment gateway integration
 Advanced recommendation engine  
 Calendar-based event explorer  
 Cloud image storage integration  
-Live deployment with PostgreSQL & Cloudinary
+
 
 ---
 
